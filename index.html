@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 홈페이지 </title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #f8f7f8, #2575fc);
+            
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000000;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>환영합니다!</h1>
+        <p>버튼을 클릭해 보세요.</p>
+        <button id="myButton">클릭하세요!</button>
+        <p id="message" style="display: none;">Loading....</p>
+
+    </div>
+
+    <script>
+        // 버튼 클릭 시 메시지를 표시하는 함수
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
